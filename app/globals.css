@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(136, 1, 1) 0%, rgb(136, 1, 1) 35%, #000 52%, black 100%);
+  color: white;
+}
