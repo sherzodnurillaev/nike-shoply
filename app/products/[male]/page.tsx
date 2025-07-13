@@ -1,14 +1,15 @@
 import ProductList from "@/components/Category/Card";
 import Fillter from "@/components/Category/Fillter";
+import { use } from 'react';
 
 interface PageProps {
-  params: { male: string }
-  searchParams: { category?: string }
+  params: Promise<{ male: string }>;
+  searchParams: Promise<{ category?: string }>
 }
 
 const products = ({params, searchParams}: PageProps) => {
-    const {male} = params;
-    const {category} = searchParams;
+    const {male} = use(params);
+    const {category} = use(searchParams);
 
     console.log(category);
     

@@ -4,6 +4,7 @@ import { fetchProducts } from "@/lib/api";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useCart } from "../context/CartContext";
 
 interface ProductListProps {
   male: string;
@@ -23,56 +24,21 @@ type Product = {
 };
 
 const ProductList = ({ male, category }: ProductListProps) => {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [buyList, setBuyList] = useState<number[]>([]);
-  const [favorites, setFavorites] = useState<number[]>([]);
+    const [products, setProducts] = useState<Product[]>([]);
+
+    const {buyList, setBuyList, favorites, setFavorites, toggleBuy, toggleFavorite } = useCart();
 
 
     useEffect(() => {
     fetchProducts().then((data) => {
         let filtered = data.filter((item: Product) => item.male === male);
-
         if (category) {
         filtered = filtered.filter((item: Product) => item.category === category);
         }
-
         setProducts(filtered);
-
-        const stored = JSON.parse(localStorage.getItem("buyList") || "[]");
-        setBuyList(stored.map((item: { id: number }) => item.id));
-        const favStored = JSON.parse(localStorage.getItem("favorites") || "[]");
-        setFavorites(favStored);
     });
     }, [male, category]);
 
-  const toggleBuyStatus = (id: number) => {
-    let updated: { id: number; status: string }[] = [];
-
-    const stored = JSON.parse(localStorage.getItem("buyList") || "[]");
-
-    const exists = stored.find((item: { id: number }) => item.id === id);
-
-    if (exists) {
-      updated = stored.filter((item: { id: number }) => item.id !== id);
-    } else {
-      updated = [...stored, { id, status: "buy" }];
-    }
-
-    localStorage.setItem("buyList", JSON.stringify(updated));
-    setBuyList(updated.map((item) => item.id));
-  };
-    const toggleFavorite = (id: number) => {
-        let updated = [...favorites];
-
-        if (favorites.includes(id)) {
-            updated = updated.filter((favId) => favId !== id);
-        } else {
-            updated.push(id);
-        }
-
-        localStorage.setItem("favorites", JSON.stringify(updated));
-        setFavorites(updated);
-        };
 
   return (
     <>
@@ -97,13 +63,13 @@ const ProductList = ({ male, category }: ProductListProps) => {
                 <h2 className="text-[#9e9e9e] text-[14px] md:text-[16px] lg:text-[18px]">{item.price} $</h2>
                 <div className="flex justify-between !pt-[10px] gap-2">
                 <Link
-                    href={"#"}
+                    href={`/products/${item.male}/${item.id}`}
                     className="bg-black !px-[15px] md:!px-[25px] !py-[3px] md:!py-[7px] text-[14px] md:text-[16px] lg:text-[18px] rounded-[20px] text-white"
                 >
                     Show
                 </Link>
                 <button
-                    onClick={() => toggleBuyStatus(item.id)}
+                    onClick={() => toggleBuy(item.id)}
                     className={`${
                     buyList.includes(item.id) ? "bg-red-600" : "bg-black"
                     } !px-[15px] md:!px-[25px] !py-[3px] md:!py-[7px] rounded-[20px] text-[14px] md:text-[16px] lg:text-[18px] text-white`}

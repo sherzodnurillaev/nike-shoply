@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import AudioPlayer from "@/components/AudioPlayer";
 import Centre from "@/components/CenterLogoPage";
 import Footer from "@/components/layout/Footer";
+import { CartProvider } from "@/components/context/CartContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,11 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Centre />
-        <AudioPlayer />
-        <Header />
-          {children}
-        <Footer />
+        <CartProvider>
+          <Centre />
+          <AudioPlayer />
+          <Header />
+            {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );
