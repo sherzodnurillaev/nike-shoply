@@ -25,7 +25,14 @@ const Header = () => {
     <>
       <header className="flex justify-between items-center !px-5 relative">
         <Link href="/" className="cursor-pointer select-none">
-          <Image src="/nike-logo.png" width={150} height={100} alt="logo" />
+          <div className="relative w-[100px] h-[50px] sm:w-[130px] sm:h-[70px] md:w-[150px] md:h-[80px] lg:w-[180px] lg:h-[100px]">
+            <Image
+                src="/nike-logo.png"
+                alt="logo"
+                fill
+                className="object-contain"
+            />
+          </div>
         </Link>
 
         <nav className="hidden md:flex gap-8">

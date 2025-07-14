@@ -1,22 +1,19 @@
-'use client'
-
-import { use } from "react";
+import ProductId from "@/components/Product/ProductId";
 
 interface PageProps {
-    params: Promise<{ 
-        male: String;
-        id: String
-    }>
+  params: {
+    male: string;
+    id: string;
+  };
 }
 
 const ProductPage = ({ params }: PageProps) => {
-    const { male, id } = use(params);
+  return (
+    <>
+      <h1>Товар: {params.id}</h1>
+      <ProductId id={params.id} />
+    </>
+  );
+};
 
-    return (
-        <>
-            <h1>Товар: {id}</h1>
-        </>
-    )
-}
-
-export default ProductPage
+export default ProductPage;
