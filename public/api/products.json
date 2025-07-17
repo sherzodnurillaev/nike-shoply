@@ -2,7 +2,7 @@
             {
                 "id": 1,
                 "model": "Dunk",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "dunk",
                 "male": "men",
                 "price": 149.99,
@@ -16,7 +16,7 @@
             {
                 "id": 2,
                 "model": "Dunk",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "dunk",
                 "male": "kids",
                 "price": 129.99,
@@ -30,7 +30,7 @@
             {
                 "id": 3,
                 "model": "Dunk",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "dunk",
                 "male": "women",
                 "price": 149.99,
@@ -44,12 +44,13 @@
             {
                 "id": 4,
                 "model": "City",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "city",
                 "male": "men",
                 "price": 169.99,
                 "pictures": [
                     "/products/man/CityBlack.webp",
+                    "/products/man/CityBrown.avif",
                     "/products/man/CityBrown.avif",
                     "/products/man/CityGray.avif"
                 ]
@@ -57,12 +58,13 @@
             {
                 "id": 5,
                 "model": "City",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "city",
                 "male": "kids",
                 "price": 189.99,
                 "pictures": [
                     "/products/kids/CityViolet.webp",
+                    "/products/kids/CityGray.jpeg",
                     "/products/kids/CityGray.jpeg",
                     "/products/kids/CityBlack.webp"
                 ]
@@ -70,12 +72,13 @@
             {
                 "id": 6,
                 "model": "City",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "city",
                 "male": "women",
                 "price": 109.99,
                 "pictures": [
                     "/products/woman/CityBlack.webp",
+                    "/products/woman/CityWhite.webp",
                     "/products/woman/CityWhite.webp",
                     "/products/woman/CityOrange.webp"
                 ]
@@ -83,7 +86,7 @@
             {
                 "id": 7,
                 "model": "Air Force",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "af1",
                 "male": "men",
                 "price": 159.99,
@@ -97,7 +100,7 @@
             {
                 "id": 8,
                 "model": "Air Force",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "af1",
                 "male": "kids",
                 "price": 139.99,
@@ -111,7 +114,7 @@
             {
                 "id": 9,
                 "model": "Air Force",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "af1",
                 "male": "women",
                 "price": 169.99,
@@ -125,12 +128,13 @@
             {
                 "id": 10,
                 "model": "Mercurial",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "mercurial",
                 "male": "men",
                 "price": 129.99,
                 "pictures": [
                     "/products/man/CityBlack.webp",
+                    "/products/man/CityBrown.avif",
                     "/products/man/CityBrown.avif",
                     "/products/man/CityGray.avif"
                 ]
@@ -138,12 +142,13 @@
             {
                 "id": 11,
                 "model": "Mercurial",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "mercurial",
                 "male": "kids",
                 "price": 119.99,
                 "pictures": [
                     "/products/kids/CityViolet.webp",
+                    "/products/kids/CityGray.jpeg",
                     "/products/kids/CityGray.jpeg",
                     "/products/kids/CityBlack.webp"
                 ]
@@ -151,12 +156,13 @@
             {
                 "id": 12,
                 "model": "Mercurial",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "mercurial",
                 "male": "women",
                 "price": 125.99,
                 "pictures": [
                     "/products/woman/CityBlack.webp",
+                    "/products/woman/CityWhite.webp",
                     "/products/woman/CityWhite.webp",
                     "/products/woman/CityOrange.webp"
                 ]
@@ -164,7 +170,7 @@
             {
                 "id": 13,
                 "model": "V2K Run",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "v2k",
                 "male": "men",
                 "price": 189.99,
@@ -178,7 +184,7 @@
             {
                 "id": 14,
                 "model": "V2K Run",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "v2k",
                 "male": "kids",
                 "price": 159.99,
@@ -192,7 +198,7 @@
             {
                 "id": 15,
                 "model": "V2K Run",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "v2k",
                 "male": "women",
                 "price": 149.99,
@@ -206,12 +212,13 @@
             {
                 "id": 16,
                 "model": "Vomero",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "vomero",
                 "male": "men",
                 "price": 139.99,
                 "pictures": [
                     "/products/man/CityBlack.webp",
+                    "/products/man/CityBrown.avif",
                     "/products/man/CityBrown.avif",
                     "/products/man/CityGray.avif"
                 ]
@@ -219,12 +226,13 @@
             {
                 "id": 17,
                 "model": "Vomero",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "vomero",
                 "male": "kids",
                 "price": 129.99,
                 "pictures": [
                     "/products/kids/CityViolet.webp",
+                    "/products/kids/CityGray.jpeg",
                     "/products/kids/CityGray.jpeg",
                     "/products/kids/CityBlack.webp"
                 ]
@@ -232,13 +240,14 @@
             {
                 "id": 18,
                 "model": "Vomero",
-                "description": "Comfort meets power in this high-tech performance sneaker.",
+                "description": "Comfort meets power in this high-tech performance sneaker, designed for those who demand more from every step. Engineered with cutting-edge materials, it provides maximum support, breathability, and responsiveness. Whether you're training, running, or walking, this sneaker adapts to your movements with precision. The lightweight sole delivers energy return with every stride, while the cushioned interior ensures all-day comfort. Its sleek, modern design isn’t just stylish — it’s built for performance. The upper mesh promotes airflow, keeping your feet cool and dry. Advanced shock absorption reduces fatigue, letting you go further, faster. Perfect for athletes and casual wearers alike, this sneaker combines innovation with versatility. Step into the future of footwear where technology, comfort, and performance unite seamlessly.",
                 "category": "vomero",
                 "male": "women",
                 "price": 149.99,
                 "pictures": [
                     "/products/woman/CityBlack.webp",
-                    "/products/woman/CityWhite.webp",
+                    "/products/woman/CityBrown.webp",
+                    "/products/woman/CityBrown.webp",
                     "/products/woman/CityOrange.webp"
                 ]
             }
