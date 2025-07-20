@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/thumbs";
 import "swiper/css/navigation";
 import ProButton from "../ui/ProfButton";
+import Back from "../ui/Back";
 
 interface ProductIdProps {
   id: string;
@@ -41,32 +42,33 @@ const ProductId = ({ id }: ProductIdProps) => {
   if (!product) return <p>Загрузка...</p>;
 
   return (
-    <div className="flex gap-5">
-
-        <div className="max-w-[600px]">
-
-        <Swiper
+    <div className="!px-4 md:!px-8 max-w-[1200px] !mx-auto">
+        <Back />
+        <div className="flex flex-col md:flex-row items-start gap-8 !mt-[20px]">
+        {/* ЛЕВАЯ СЕКЦИЯ: Swiper */}
+        <div className="w-full md:w-1/2">
+            <Swiper
             spaceBetween={10}
             thumbs={{ swiper: thumbsSwiper }}
             modules={[Thumbs, Navigation]}
             className="!mb-4"
-        >
+            >
             {product.pictures.map((item, index) => (
-            <SwiperSlide key={index}>
-                <div className="max-w-[600px] max-h-[600px] rounded-2xl overflow-hidden">
+                <SwiperSlide key={index}>
+                <div className="w-full aspect-square max-h-[500px] rounded-2xl overflow-hidden">
                     <Image
-                        src={item}
-                        alt={`Image ${index}`}
-                        width={600}
-                        height={500}
-                        className="bg-center bg-cover object-cover"
+                    src={item}
+                    alt={`Image ${index}`}
+                    width={600}
+                    height={500}
+                    className="object-cover w-full h-full"
                     />
                 </div>
-            </SwiperSlide>
+                </SwiperSlide>
             ))}
-        </Swiper>
+            </Swiper>
 
-        <div className="hidden md:flex">
+            <div className="hidden md:flex !mt-2">
             <Swiper
                 onSwiper={setThumbsSwiper}
                 spaceBetween={10}
@@ -75,40 +77,45 @@ const ProductId = ({ id }: ProductIdProps) => {
             >
                 {product.pictures.map((item, index) => (
                 <SwiperSlide key={index}>
-                    <div className="max-w-[140px] rounded-2xl overflow-hidden max-h-[140px]">
-                        <Image
+                    <div className="w-full max-w-[120px] rounded-xl overflow-hidden aspect-square border border-gray-300">
+                    <Image
                         src={item}
                         alt={`Thumb ${index}`}
-                        width={50}
-                        height={50}
-                        className="w-full h-auto object-contain border border-gray-300 rounded"
-                        />
+                        width={100}
+                        height={100}
+                        className="w-full h-full object-cover"
+                    />
                     </div>
                 </SwiperSlide>
                 ))}
             </Swiper>
-        </div>
-        </div>
-            <div className="">
-                <div className="flex items-center">
-                    <h1 className="text-[36px]">{product.model}</h1>
-                    <Image
-                        src={'/nike-logo.png'}
-                        alt={`Thumb`}
-                        width={120}
-                        height={50}
-                        className="w-[120] h-auto object-contain"
-                    />
-                </div>
-                <div className="">
-                </div>
-                <h2>{product.description}</h2>
-                <div className="">
-                    <p>for: {product.male}</p>
-                </div>
-                <span>price: ${product.price}</span>
-                <ProButton req={product.id} />
             </div>
+        </div>
+
+        {/* ПРАВАЯ СЕКЦИЯ: Инфо и кнопки */}
+        <div className="w-full md:w-1/2 bg-white/35 !p-6 rounded-2xl flex flex-col gap-4 text-base">
+            <div className="flex flex-row items-center justify-between gap-2">
+            <h1 className="text-2xl sm:text-3xl font-bold">{product.model}</h1>
+            <Image
+                src="/nike-logo.png"
+                alt="Brand"
+                width={120}
+                height={50}
+                className="w-[100px] sm:w-[120px] h-auto object-contain"
+            />
+            </div>
+
+            <p className="text-sm md:text-base text-gray-800">{product.description}</p>
+
+            <p className="text-sm md:text-base">
+            <span className="font-semibold">For:</span> {product.male}
+            </p>
+
+            <p className="text-lg font-semibold">Price: ${product.price}</p>
+
+            <ProButton id={product.id} />
+        </div>
+        </div>
     </div>
   );
 };

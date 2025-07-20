@@ -17,7 +17,7 @@ export default function AudioPlayer() {
       {!isPlaying && (
         <button
           onClick={handleClick}
-          className="fixed bottom-4 right-4 px-4 py-2 bg-red-700 text-white rounded shadow-lg z-50"
+          className="fixed bottom-4 right-4 !px-4 !py-2 bg-red-700 text-white rounded shadow-lg z-50"
         >
           ▶ Включить музыку
         </button>
