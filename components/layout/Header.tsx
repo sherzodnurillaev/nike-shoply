@@ -13,7 +13,7 @@ const menu = [
 
 const icons = [
   { name: "heart", icon: "/icon/heart.svg", path: "/favorites" },
-  { name: "basket", icon: "/icon/basket.svg", path: "/cart" },
+  { name: "basket", icon: "/icon/basket.svg", path: "/basquet" },
   { name: "user", icon: "/icon/user.svg", path: "#" },
 ];
 

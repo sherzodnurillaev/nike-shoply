@@ -10,7 +10,7 @@ interface PageProps {
 const ProductPage = ({ params }: PageProps) => {
      
   return (
-    <div className="max-w-[1300px] !mx-auto !px-[20px] !mt-[50px]">
+    <div className="max-w-[1300px] !mx-auto !px-[20px] !mt-[20px] md:!mt-[50px]">
         <ProductId id={params.id} />
     </div>
   );
