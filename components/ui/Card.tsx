@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useCart } from "../context/CartContext";
 import Link from "next/link";
 import products from '@/public/api/products.json'
+import { Dispatch, SetStateAction, useEffect } from "react";
 
 type Product = {
   id: number;
@@ -18,23 +19,36 @@ type Product = {
 interface CardProps {
   favorite?: Product[];
   basquet?: Product[];
+  setRefetch?: Dispatch<SetStateAction<boolean>>;
+  refetch?: boolean;
 }
 
-const Card = ({ favorite = [], basquet = [] }: CardProps) => {
-  const {
-    buyList,
-    setBuyList,
-    favorites,
-    setFavorites,
-    toggleBuy,
-    toggleFavorite,
-  } = useCart();
+const Card = ({ favorite = [], basquet = [], setRefetch, refetch }: CardProps) => {
+    const {
+      buyList,
+      setBuyList,
+      favorites,
+      setFavorites,
+      toggleBuy,
+      toggleFavorite,
+    } = useCart();
 
-//   const productsToRender = favorite.length > 0 ? favorite : basquet;
-const mode = favorite.length > 0 ? 'favorites' : 'basket';
-const productsToRender = mode === 'favorites'
-  ? products.filter(p => favorites.includes(p.id))
-  : products.filter(p => buyList.includes(p.id));
+  //   const productsToRender = favorite.length > 0 ? favorite : basquet;
+    const mode = favorite.length > 0 ? 'favorites' : 'basket';
+    const productsToRender = mode === 'favorites'
+      ? products.filter(p => favorites.includes(p.id))
+      : products.filter(p => buyList.includes(p.id));
+
+      console.log(favorite);
+
+    useEffect(() => {
+      const activeList = mode === 'favorites' ? favorites : buyList;
+
+      if (activeList.length === 0 && typeof setRefetch === 'function' && typeof refetch === 'boolean') {
+        setRefetch(!refetch);
+      }
+    }, [favorites, buyList]);
+  
 
 
   return (

@@ -1,9 +1,11 @@
-"use client"
+"use client";
 
 import { fetchProducts } from "@/lib/api";
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import Card from "../ui/Card";
 import Back from "../ui/Back";
+import Image from "next/image";
+import Empty from "../ui/EmptyButtons";
 
 type Product = {
   id: number;
@@ -18,39 +20,39 @@ type Product = {
 };
 
 const FavoritesCard = () => {
-    const [favorites, setFavorites] = useState<Product[]>([])
-    const [basquet, setBasquet] = useState<Product[]>([])
+  const [favorites, setFavorites] = useState<Product[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+    const [refetch, setRefetch] = useState(false);
 
-    useEffect(() => {
-        const data = localStorage.getItem("favorites")
-        if (data) {
-            setFavorites(JSON.parse(data))
-        }
-    }, [])
+  useEffect(() => {
+    const fetchData = async () => {
+      const idLocale = localStorage.getItem("favorites");
+      if (!idLocale) {
+        setIsLoading(false);
+        return;
+      }
+      const ids: number[] = JSON.parse(idLocale);
+      const data = await fetchProducts();
+      const filtered = data.filter((item: Product) => ids.includes(item.id));
+      setFavorites(filtered);
+      setIsLoading(false);
+    };
 
-    useEffect(() => {
-    fetchProducts().then((data) => {
-        const idLocale = localStorage.getItem("favorites");
-        if (!idLocale) return;
-        const ids: number[] = JSON.parse(idLocale); // ← превращаем строку в массив
-        // Проход по каждому id (если нужно просто пройтись)
-        ids.forEach((id) => {
-        console.log("ID из localStorage:", id);
-        });
-        // Фильтруем продукты, которые есть в favorites
-        const filtered = data.filter((item: Product) => ids.includes(item.id));
-        // Можно дальше фильтровать по категории, если нужно:
-        // const finalFiltered = filtered.filter((item) => item.category === category);
-        setFavorites(filtered);
-    });
-    }, []);
+    fetchData();
+  }, [refetch]);
 
-    return (
-        <div className="max-w-[1300px] !mx-auto !mt-[10px] !px-[20px]">
-            <Back />
-            <Card favorite={favorites} />
-        </div>
-    )
-}
+  return (
+    <div className="max-w-[1300px] !mx-auto !mt-[10px] !mb-[30px] !px-[20px]">
+      <Back />
+      {isLoading ? (
+        <div className="text-center py-10 text-gray-500">Loading...</div>
+      ) : favorites.length > 0 ? (
+        <Card favorite={favorites} setRefetch={setRefetch} refetch={refetch} />
+      ) : (
+        <Empty />
+      )}
+    </div>
+  );
+};
 
-export default FavoritesCard
+export default FavoritesCard;

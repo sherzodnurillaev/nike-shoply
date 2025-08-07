@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const Footer = () => {
   return (
@@ -33,9 +34,9 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold !mb-3">Company</h3>
           <ul className="!space-y-2 text-sm">
-            <li><Link href="about" className="hover:underline">About Us</Link></li>
-            <li><Link href="#" className="hover:underline">Contact</Link></li>
-            <li><Link href="careers" className="hover:underline">Careers</Link></li>
+            <li><Link href="/about" className="hover:underline">About Us</Link></li>
+            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+            <li><Link href="/careers" className="hover:underline">Careers</Link></li>
           </ul>
         </div>
 
@@ -43,15 +44,15 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold !mb-3">Follow Us</h3>
           <ul className="!space-y-2 text-sm">
-            <li><a href="https://instagram.com" target="_blank" className="hover:underline">Instagram</a></li>
-            <li><a href="https://twitter.com" target="_blank" className="hover:underline">Twitter</a></li>
-            <li><a href="https://facebook.com" target="_blank" className="hover:underline">Facebook</a></li>
+            <li><a href="https://www.instagram.com/nike?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" className="hover:underline">Instagram</a></li>
+            <li><a href="https://x.com/nike/with_replies" target="_blank" className="hover:underline">Twitter</a></li>
+            <li><a href="https://www.facebook.com/nike/?locale=ru_RU" target="_blank" className="hover:underline">Facebook</a></li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-gray-800 !mt-10 !pt-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} NIKE. All rights reserved.
+        <p>© 2025 NIKE. All rights reserved.</p>
       </div>
     </footer>
   );

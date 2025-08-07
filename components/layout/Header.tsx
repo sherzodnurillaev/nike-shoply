@@ -77,15 +77,17 @@ const Header = () => {
           })}
         </div>
 
-        {/* Mobile menu */}
-        <button
+        {/* <button
           className="md:hidden flex flex-col justify-center items-center gap-1 z-50"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className="w-6 h-0.5 bg-black dark:bg-white transition" />
           <span className="w-6 h-0.5 bg-black dark:bg-white transition" />
           <span className="w-6 h-0.5 bg-black dark:bg-white transition" />
-        </button>
+        </button> */}
+        <div className="md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
+          <Image src={ isOpen ? '/icon/close.png' : '/icon/menu.png'} width={30} height={30} alt="menu" />
+        </div>
 
         {isOpen && (
           <div className="absolute top-full left-0 w-full bg-gradient-to-bl border-t-1 border-white from-black to-red-700 flex flex-col items-center gap-6 !py-10 md:hidden z-40 shadow-md">
@@ -112,7 +114,9 @@ const Header = () => {
                     : 0;
 
                     return (
-                    <Link href={icon.path} key={index} className="relative w-[50px] h-[50px] flex items-center justify-center">
+                    <Link href={icon.path} key={index} className="relative w-[50px] h-[50px] flex items-center justify-center"
+                      onClick={() => setIsOpen(false)}
+                    >
                         {count > 0 && (
                         <span className="absolute top-0 right-0 text-[12px] bg-red-700 text-white w-5 h-5 rounded-full flex items-center justify-center z-20">
                             {count}

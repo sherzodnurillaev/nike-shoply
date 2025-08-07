@@ -20,11 +20,15 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <CartProvider>
-          <Centre />
-          <AudioPlayer />
-          <Header />
-            {children}
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Centre />
+            <AudioPlayer />
+            <Header />
+            
+              <main className="flex-grow">{children}</main>
+
+            <Footer />
+          </div>
         </CartProvider>
       </body>
     </html>

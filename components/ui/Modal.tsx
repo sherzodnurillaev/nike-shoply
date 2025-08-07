@@ -88,7 +88,7 @@ const Modal = ({ onClose }: ModalProps) => {
               <option value="QA Tester">QA Tester</option>
             </select>
             <textarea
-              placeholder="Message (at least 50 characters)"
+              placeholder="Message (at least 20 characters)"
               className="border !p-2 !mb-3 w-full rounded"
               value={message}
               onChange={(e) => setMessage(e.target.value)}

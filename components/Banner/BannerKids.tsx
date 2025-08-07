@@ -13,7 +13,7 @@ const BannerKids = () => {
                     <h2 className='text-[18px] md:text-[28px] lg:text-[32px] xl:text-[38px] font-semibold text-[#9e9e9e]'>Play Without Limits.</h2>
                     <p className='text-[#fff] text-[14px] md:text-[18px] xl:text-[20px] max-w-[500px] !my-2'>Gear up the next generation with comfy, cool, and colorful styles made for every adventure.</p>
                     <Link 
-                        href={"/"}
+                        href={"/products/kids"}
                         className='inline-block bg-black text-white text-[14px] md:text-[16px] lg:text-[20px] !px-6 !py-3 rounded-full font-semibold hover:text-red-600 transition'
                     >
                         SHOP KIDS

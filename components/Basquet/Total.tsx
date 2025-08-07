@@ -24,9 +24,6 @@ interface TotalProps {
 const Total = ({ basquet = [], setOpen }: TotalProps) => {
 const [basketItems, setBasketItems] = useState<(Product & { count: number })[]>([]);
 
-console.log(basketItems);
-
-
   // Инициализируем basket с количеством
   useEffect(() => {
     const withCount = basquet.map(item => ({
@@ -62,12 +59,12 @@ console.log(basketItems);
     >
       <div
         className="bg-gradient-to-r from-red-800 to-black rounded-[20px] z-50 w-[90%] max-w-[700px] max-h-[90vh] text-white !p-6 overflow-y-auto"
-        onClick={(e) => e.stopPropagation()} // ❗️не закрывает при клике внутри модалки
+        onClick={(e) => e.stopPropagation()}
       >
         <h1 className="text-2xl font-bold !mb-6 text-center">Your Order</h1>
 
         { basketItems.length === 0 ? (
-          <p className="text-center text-gray-400">Корзина пуста</p>
+          <p className="text-center text-gray-400">Cart is empty</p>
         ) : (
           <div className="flex flex-col gap-4">
           {basketItems.map((item) => (
@@ -120,7 +117,7 @@ console.log(basketItems);
             onClick={() => {
               localStorage.removeItem("buyList");
               setOpen(false);
-              location.reload(); // ❗️перезагрузим страницу, можно заменить на setState
+              location.reload();
             }}
             className="bg-red-600 hover:bg-red-700 text-white !px-5 !py-2 rounded-xl"
           >

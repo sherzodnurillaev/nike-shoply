@@ -6,7 +6,16 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background: linear-gradient(to right, rgb(136, 1, 1) 0%, rgb(136, 1, 1) 35%, #000 52%, black 100%);
   color: white;
 }

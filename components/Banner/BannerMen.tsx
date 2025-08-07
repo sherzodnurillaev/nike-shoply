@@ -20,7 +20,7 @@ const BannerMen = () => {
             Take on anything spring throws your way in these functional styles
           </p>
           <Link
-            href="/"
+            href="/products/men"
             className="inline-block bg-black text-white text-[14px] md:text-[16px] lg:text-[20px] !px-6 !py-3 rounded-full font-semibold hover:text-red-600 transition"
           >
             SHOP MEN
