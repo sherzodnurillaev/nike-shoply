@@ -45,7 +45,7 @@ const ProductId = ({ id }: ProductIdProps) => {
     <div className="!px-4 md:!px-8 max-w-[1200px] !mx-auto">
         <Back />
         <div className="flex flex-col md:flex-row items-start gap-8 !mt-[20px]">
-        {/* ЛЕВАЯ СЕКЦИЯ: Swiper */}
+
         <div className="w-full md:w-1/2">
             <Swiper
             spaceBetween={10}
@@ -92,7 +92,6 @@ const ProductId = ({ id }: ProductIdProps) => {
             </div>
         </div>
 
-        {/* ПРАВАЯ СЕКЦИЯ: Инфо и кнопки */}
         <div className="w-full md:w-1/2 bg-white/35 !p-6 rounded-2xl flex flex-col gap-4 text-base">
             <div className="flex flex-row items-center justify-between gap-2">
             <h1 className="text-2xl sm:text-3xl font-bold">{product.model}</h1>

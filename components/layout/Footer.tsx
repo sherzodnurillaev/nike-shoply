@@ -2,14 +2,12 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white !py-10 !px-5 relative !mt-[20px] md:!mt-[50px]">
       <div className="max-w-[1300px] !mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
         
-        {/* Бренд / Описание */}
         <div>
             <div className="flex items-end">
                 <Image src={'/nike-logo.png'} width={100} height={50} alt='logo' />
@@ -20,7 +18,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Навигация */}
         <div>
           <h3 className="font-semibold !mb-3">Shop</h3>
           <ul className="!space-y-2 text-sm">
@@ -30,7 +27,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* О нас */}
         <div>
           <h3 className="font-semibold !mb-3">Company</h3>
           <ul className="!space-y-2 text-sm">
@@ -40,7 +36,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Соцсети */}
         <div>
           <h3 className="font-semibold !mb-3">Follow Us</h3>
           <ul className="!space-y-2 text-sm">

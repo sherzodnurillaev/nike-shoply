@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useState } from "react"
 import { useCart } from "../context/CartContext"
 
 const data = ["buy", "like"]
@@ -10,7 +9,7 @@ interface Type {
 }
 
 const ProButton = ({ id }: Type) => {
-    const {buyList, setBuyList, favorites, setFavorites, toggleBuy, toggleFavorite } = useCart();
+    const {buyList, favorites, toggleBuy, toggleFavorite } = useCart();
 
     return (
         <div className="flex justify-between">

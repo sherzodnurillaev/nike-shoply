@@ -9,8 +9,8 @@ const Card3D = () => {
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 30; // угол по X
-    const y = ((e.clientY - rect.top) / rect.height - 0.5) * -30; // угол по Y
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 30; 
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * -30; 
     setRotate({ x, y });
   };
 
@@ -35,7 +35,7 @@ const Card3D = () => {
         transition={{ type: 'spring', stiffness: 200, damping: 10 }}
       >
         <Image
-          src="/nike-logos-jordan-white.png" // путь к твоему изображению
+          src="/nike-logos-jordan-white.png"
           alt="3D Logo"
           fill
           className="object-contain relative z-0"

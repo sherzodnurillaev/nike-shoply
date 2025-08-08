@@ -30,14 +30,12 @@ const ProductList = ({ male, category }: ProductListProps) => {
 
   const { buyList, toggleBuy, favorites, toggleFavorite } = useCart();
 
-  // Устанавливаем, сколько показывать по умолчанию
   useEffect(() => {
     const width = window.innerWidth;
     const initialCount = width < 768 ? 4 : 8;
     setVisibleCount(initialCount);
   }, []);
 
-  // Загружаем данные
   useEffect(() => {
     fetchProducts().then((data) => {
       let filtered = data.filter((item: Product) => item.male === male);
@@ -48,7 +46,6 @@ const ProductList = ({ male, category }: ProductListProps) => {
     });
   }, [male, category]);
 
-  // Показать либо обрезанную часть, либо все
   const displayedProducts = showAll ? products : products.slice(0, visibleCount);
 
   return (

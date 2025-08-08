@@ -77,14 +77,6 @@ const Header = () => {
           })}
         </div>
 
-        {/* <button
-          className="md:hidden flex flex-col justify-center items-center gap-1 z-50"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span className="w-6 h-0.5 bg-black dark:bg-white transition" />
-          <span className="w-6 h-0.5 bg-black dark:bg-white transition" />
-          <span className="w-6 h-0.5 bg-black dark:bg-white transition" />
-        </button> */}
         <div className="md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
           <Image src={ isOpen ? '/icon/close.png' : '/icon/menu.png'} width={30} height={30} alt="menu" />
         </div>

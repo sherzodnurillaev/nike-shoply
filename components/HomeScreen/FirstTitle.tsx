@@ -18,7 +18,6 @@ const FirstTitle = () => {
                     <h2 className="text-[18px] md:text-[28px] text-red-700 md:text-black mt-4 font-bold">Just Do It</h2>
                 </div>
 
-                {/* Правая часть: картинка */}
                 <div className="md:w-1/2 flex justify-center">
                     <Image
                     src="/forHome/nike-girl-model.png"

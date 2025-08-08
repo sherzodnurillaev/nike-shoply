@@ -24,19 +24,13 @@ interface TotalProps {
 const Total = ({ basquet = [], setOpen }: TotalProps) => {
 const [basketItems, setBasketItems] = useState<(Product & { count: number })[]>([]);
 
-  // Инициализируем basket с количеством
   useEffect(() => {
     const withCount = basquet.map(item => ({
       ...item,
-      count: 1, // по умолчанию 1
+      count: 1,
     }));
     setBasketItems(withCount);
   }, [basquet]);
-
-    const handleClear = () => {
-    localStorage.removeItem("buyList");
-    setBasketItems([]);
-  };
 
   const updateCount = (id: number, newCount: number) => {
     if (newCount < 1) return;

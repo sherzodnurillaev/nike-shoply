@@ -4,7 +4,6 @@ import { fetchProducts } from "@/lib/api";
 import { useEffect, useState } from "react";
 import Card from "../ui/Card";
 import Back from "../ui/Back";
-import Image from "next/image";
 import Empty from "../ui/EmptyButtons";
 
 type Product = {

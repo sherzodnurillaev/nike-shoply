@@ -28,9 +28,6 @@ const SecondTitle = () => {
                         Wear Your Attitude
                     </h2>
                 </div>
-
-
-                {/* Правая часть: картинка */}
             </div>
         </div>
     )

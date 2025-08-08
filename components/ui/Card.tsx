@@ -26,14 +26,11 @@ interface CardProps {
 const Card = ({ favorite = [], basquet = [], setRefetch, refetch }: CardProps) => {
     const {
       buyList,
-      setBuyList,
       favorites,
-      setFavorites,
       toggleBuy,
       toggleFavorite,
     } = useCart();
 
-  //   const productsToRender = favorite.length > 0 ? favorite : basquet;
     const mode = favorite.length > 0 ? 'favorites' : 'basket';
     const productsToRender = mode === 'favorites'
       ? products.filter(p => favorites.includes(p.id))
