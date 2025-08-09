@@ -8,7 +8,7 @@ const SecondTitle = () => {
             <div className="flex items-center justify-center gap-x-12 px-4 py-8 max-w-screen-xl mx-auto flex-wrap md:flex-nowrap">
                 <div className="md:w-1/2 flex justify-center">
                     <Image
-                    src="/forHome/nike-men-model.png"
+                    src="/forHome/nike-men-model.webp"
                     width={500}
                     height={500}
                     alt="Nike model"

@@ -13,19 +13,19 @@ type Role = {
 const roles: Role[] = [
   {
     id: 1,
-    img: "/Rols/tester.jpeg",
+    img: "/Rols/tester.webp",
     title: "QA Tester",
     description: "Responsible for ensuring the quality of web applications through manual and automated testing. You will identify bugs, improve performance, and collaborate closely with developers."
   },
   {
     id: 2,
-    img: "/Rols/frontend.jpg",
+    img: "/Rols/frontend.webp",
     title: "Frontend Developer",
     description: "Join our team to build responsive and dynamic user interfaces using React and Next.js. We're looking for someone who loves clean code and cares about user experience."
   },
   {
     id: 3,
-    img: "/Rols/design.png",
+    img: "/Rols/design.webp",
     title: "UI/UX Designer",
     description: "Design intuitive and engaging user experiences from wireframes to final visuals. You'll work closely with developers to ensure design consistency across all platforms."
   },

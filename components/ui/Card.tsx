@@ -75,6 +75,7 @@ const Card = ({ favorite = [], basquet = [], setRefetch, refetch }: CardProps) =
             <div className="flex justify-between !pt-[10px] gap-2">
               <Link
                 href={`/products/${item.male}/${item.id}`}
+                prefetch={false}
                 className="bg-black !px-[15px] md:!px-[25px] !py-[3px] md:!py-[7px] text-[14px] md:text-[16px] lg:text-[18px] rounded-[20px] text-white"
               >
                 Show

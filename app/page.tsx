@@ -1,22 +1,22 @@
-import Banner from "@/components/HomeScreen/Banner"
+import BannerLoader from "@/components/ui/BannerLoader"
 import Card3D from "@/components/HomeScreen/Card3d"
-import Picture from "@/components/HomeScreen/CasualesPicture"
 import FirstTitle from "@/components/HomeScreen/FirstTitle"
+import PictureLoader from "@/components/ui/PictureLoader"
 import SecondTitle from "@/components/HomeScreen/SecondTitle"
-import SwiperPage from "@/components/HomeScreen/Swiper"
+import SwiperLoader from "@/components/ui/SwiperLoader"
 import VideoPage from "@/components/HomeScreen/VideoPage"
 
 export default function Home() {
   return (
     <main>
-		<Banner />
+		<BannerLoader />
 		<div className="max-w-[1300px] !mx-auto">
 			<FirstTitle />
 			<VideoPage />
 			<SecondTitle />
-			<SwiperPage />
+			<SwiperLoader />
 			<Card3D />
-			<Picture />
+			<PictureLoader />
 		</div>
     </main>
   )

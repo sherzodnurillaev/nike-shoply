@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "analyze": "ANALYZE=true next build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -18,6 +19,7 @@
     "swiper": "^11.2.10"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^15.4.6",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

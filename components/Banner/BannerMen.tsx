@@ -21,6 +21,7 @@ const BannerMen = () => {
           </p>
           <Link
             href="/products/men"
+            prefetch={false}
             className="inline-block bg-black text-white text-[14px] md:text-[16px] lg:text-[20px] !px-6 !py-3 rounded-full font-semibold hover:text-red-600 transition"
           >
             SHOP MEN
@@ -35,7 +36,7 @@ const BannerMen = () => {
         >
             <div className="relative w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px] h-[150px] lg:h-[300px]">
                 <Image
-                src={'/forBanner/banner-top.png'}
+                src={'/forBanner/banner-top.webp'}
                 alt="banner"
                 fill
                 className="object-contain"
@@ -45,7 +46,7 @@ const BannerMen = () => {
 
             <div className="relative w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px] h-[100px] lg:h-[200px]">
                 <Image
-                src={'/forBanner/banner-foot.png'}
+                src={'/forBanner/banner-foot.webp'}
                 alt="banner"
                 fill
                 className="object-contain"

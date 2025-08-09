@@ -96,7 +96,7 @@ const ProductId = ({ id }: ProductIdProps) => {
             <div className="flex flex-row items-center justify-between gap-2">
             <h1 className="text-2xl sm:text-3xl font-bold">{product.model}</h1>
             <Image
-                src="/nike-logo.png"
+                src="/nike-logo.webp"
                 alt="Brand"
                 width={120}
                 height={50}

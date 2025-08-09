@@ -9,37 +9,37 @@ const SwiperPage = () => {
     const data = [
         {
             id: 1,
-            img: '/forSwiper/af1.png',
+            img: '/forSwiper/af1.webp',
             category: 'af1',
             title: "Air Force"
         },
         {
             id: 2,
-            img: '/forSwiper/city.png',
+            img: '/forSwiper/city.webp',
             category: 'city',
             title: "C1TY"
         },
         {
             id: 3,
-            img: '/forSwiper/dunk.png',
+            img: '/forSwiper/dunk.webp',
             category: 'dunk',
             title: "Dunk"
         },
         {
             id: 4,
-            img: '/forSwiper/mercurial.png',
+            img: '/forSwiper/mercurial.webp',
             category: 'mercurial',
             title: "Mercurial"
         },
         {
             id: 5,
-            img: '/forSwiper/v2k.png',
+            img: '/forSwiper/v2k.webp',
             category: 'v2k',
             title: "V2K Run"
         },
         {
             id: 6,
-            img: '/forSwiper/vomero.png',
+            img: '/forSwiper/vomero.webp',
             category: 'vomero',
             title: "Vomero"
         }

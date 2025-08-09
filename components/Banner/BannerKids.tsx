@@ -14,13 +14,14 @@ const BannerKids = () => {
                     <p className='text-[#fff] text-[14px] md:text-[18px] xl:text-[20px] max-w-[500px] !my-2'>Gear up the next generation with comfy, cool, and colorful styles made for every adventure.</p>
                     <Link 
                         href={"/products/kids"}
+                        prefetch={false}
                         className='inline-block bg-black text-white text-[14px] md:text-[16px] lg:text-[20px] !px-6 !py-3 rounded-full font-semibold hover:text-red-600 transition'
                     >
                         SHOP KIDS
                     </Link>
                 </div>
                 <div className="relative w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px] h-[200px] sm:h-[240px] md:h-[300px] lg:h-[400px]">
-                    <Image src={'/forBanner/nike-kids.png'} fill alt='banner' />
+                    <Image src={'/forBanner/nike-kids.webp'} fill alt='banner' />
                 </div>
             </div>
         </div>

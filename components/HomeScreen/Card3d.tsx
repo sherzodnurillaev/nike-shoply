@@ -35,7 +35,7 @@ const Card3D = () => {
         transition={{ type: 'spring', stiffness: 200, damping: 10 }}
       >
         <Image
-          src="/nike-logos-jordan-white.png"
+          src="/nike-logos-jordan-white.webp"
           alt="3D Logo"
           fill
           className="object-contain relative z-0"

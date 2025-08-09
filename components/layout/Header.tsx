@@ -27,7 +27,7 @@ const Header = () => {
         <Link href="/" className="cursor-pointer select-none">
           <div className="relative w-[100px] h-[50px] sm:w-[130px] sm:h-[70px] md:w-[150px] md:h-[80px] lg:w-[180px] lg:h-[100px]">
             <Image
-                src="/nike-logo.png"
+                src="/nike-logo.webp"
                 alt="logo"
                 fill
                 className="object-contain"
@@ -40,6 +40,7 @@ const Header = () => {
             <Link
               key={i}
               href={`/products/${item.category}`}
+              prefetch={false}
               className="hover:text-red-600 transition cursor-pointer"
             >
               {item.title}
@@ -59,7 +60,7 @@ const Header = () => {
               : 0;
 
             return (
-              <Link href={icon.path} key={index} className="relative w-[50px] h-[50px] flex items-center justify-center">
+              <Link href={icon.path} prefetch={false} key={index} className="relative w-[50px] h-[50px] flex items-center justify-center">
                 {count > 0 && (
                   <span className="absolute top-0 right-0 text-[12px] bg-red-700 text-white w-5 h-5 rounded-full flex items-center justify-center z-20">
                     {count}
@@ -87,6 +88,7 @@ const Header = () => {
               <Link
                 key={i}
                 href={`/products/${item.category}`}
+                prefetch={false}
                 onClick={() => setIsOpen(false)}
                 className="text-lg hover:text-red-600 transition"
               >
@@ -106,7 +108,7 @@ const Header = () => {
                     : 0;
 
                     return (
-                    <Link href={icon.path} key={index} className="relative w-[50px] h-[50px] flex items-center justify-center"
+                    <Link href={icon.path} prefetch={false} key={index} className="relative w-[50px] h-[50px] flex items-center justify-center"
                       onClick={() => setIsOpen(false)}
                     >
                         {count > 0 && (

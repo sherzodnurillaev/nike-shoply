@@ -20,7 +20,7 @@ const FirstTitle = () => {
 
                 <div className="md:w-1/2 flex justify-center">
                     <Image
-                    src="/forHome/nike-girl-model.png"
+                    src="/forHome/nike-girl-model.webp"
                     width={300}
                     height={300}
                     alt="Nike model"

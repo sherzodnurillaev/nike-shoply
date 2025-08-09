@@ -54,6 +54,7 @@ const Picture = () => {
                                 <Image src={item.img} className="!mb-[10px] rounded-[4px]" width={420} height={500} alt={item.link} />
                                 <Link
                                     href={`products/${item.link}`}
+                                    prefetch={false}
                                     className="inline-block cursor-pointer text-[14px] sm:text-[16px] md:text-[18px] bg-gradient-to-b from-red-800 to-black text-white rounded-[12px] !px-[15px] !py-[5px] text-center"
                                 >
                                     {item.title}

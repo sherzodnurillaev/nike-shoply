@@ -8,19 +8,19 @@ const LinkContact = () => {
     const data = [
         {
             id: 1,
-            img: "/contacts/instagram.png",
+            img: "/contacts/instagram.webp",
             link: "https://www.instagram.com/nike?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
             title: "instagramm"
         },
         {
             id: 2,
-            img: "/contacts/facebook.png",
+            img: "/contacts/facebook.webp",
             link: "https://www.facebook.com/nike/?locale=ru_RU",
             title: "faceBook"
         },
         {
             id: 3,
-            img: "/contacts/twitter.png",
+            img: "/contacts/twitter.webp",
             link: "https://x.com/nike/with_replies",
             title: "twitter"
         }
@@ -38,7 +38,7 @@ const LinkContact = () => {
                     ))
                 }
             </div>
-            <Image src={'/nike-logo.png'} width={400} height={200} alt="logo" className="!mx-auto" />
+            <Image src={'/nike-logo.webp'} width={400} height={200} alt="logo" className="!mx-auto" />
         </div>
     )
 }
