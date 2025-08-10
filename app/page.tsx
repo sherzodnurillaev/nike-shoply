@@ -16,7 +16,7 @@ export default function Home() {
 			<SecondTitle />
 			<SwiperLoader />
 			<Card3D />
-			<PictureLoader />
+			{/* <PictureLoader /> */}
 		</div>
     </main>
   )
