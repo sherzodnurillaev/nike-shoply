@@ -1,10 +1,11 @@
 'use client'
 
 import dynamic from 'next/dynamic';
+import Skeleton from './Skeleton';
 
 const SwiperPage = dynamic(() => import('@/components/HomeScreen/Swiper'), {
   ssr: false,
-  loading: () => <p>Загрузка...</p>,
+  loading: () => <Skeleton />,
 });
 
 export default function SwiperLoader() {
